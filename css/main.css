@@ -1,8 +1,7 @@
 html {
-    background-color: #717171;
     margin: 0;
     width: 100%;
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family:  Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
 }
 body {
@@ -11,50 +10,45 @@ body {
     right: 0;
 }
 .portfolio-menu ul {
-    background-color: rgb(89, 94, 94);
     margin: 0;
     display: flex;
-    justify-content:center;
-    padding-top: 15px;
-    font-size: 1rem;    
-    font-weight: 300;
-    
+    padding-top: 5px;
+    font-size: 1rem;  
+    font-weight: bold;
+    background-color: darkslategray;
 }
 .portfolio-menu ul li {
+    text-align: right;
     margin: 0px 10px;
     list-style: none;
 }
 .portfolio-menu .menu-item a{
-    color:darkgrey;
+    color:white;
     text-decoration: underline;
     text-transform: uppercase;
-    
+    font-weight: 300;
 }
 .header {
     font-weight: 300;
-    margin: 10px;
-    font-size: 2.2rem;
+    margin: 0px;
+    font-size: 2rem;
     color: black;
     text-align: center;
 }
 * {box-sizing:border-box}
-
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1300px;
+  max-width: 1400px;
   position: relative;
   margin: auto;
 }
-
 /* Hide the images by default */
 .mySlides {
   display: none;
 }
 .pic {
     width:100%;
-    
 }
-
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -118,5 +112,74 @@ body {
   animation-name: fade;
   animation-duration: 1.5s;
 }
+main {
+  font-size: 1.5rem;
+  margin: 25px;
+  padding: 25px;
+  text-align: center;
+  color: black;
+  text-decoration: none; 
+}
+#about {
+  font-size: 2rem;
+  margin: 0px;
+  padding: 0px;
+  color: black;   
+}
+#about h2 {
+  
+  padding: 20px;
+  margin: 20px;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: justify;
+}
+#heroes h1 {
+    margin: 10px;
+    padding: 20px;
+    font-size: 2rem;
+    text-align: left;
+}
+#heroes h2 {
+  padding: 10px;
+  margin: 10px;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: justify;
+}
+footer {
+  color: white;
+  text-align: center;
+  background-color: black;
+  margin: 0px;
+  padding-bottom:30px;
+}
 
-
+@media screen and (max-width: 812px){
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+    position: sticky;
+}
+.portfolio-menu ul {
+  display: flex;
+  justify-content: center;
+  padding-right: 2rem;
+  padding-top: 15px;
+  font-size: 1rem;    
+  position: sticky;
+}
+.header {
+  margin: 10px;
+  font-size: 1rem;
+  color: black;
+  text-align: center;
+}
+#about p {
+  position: sticky;
+  padding: 0px;
+  margin: 0px;
+  font-size: 2rem;
+  text-align: center;
+}
+}
