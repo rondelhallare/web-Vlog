@@ -1,0 +1,24 @@
+{
+  "name": "web-vlog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://github.io/rondelhallare/web-Vlog",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rondelhallare/web-Vlog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rondelhallare/web-Vlog/issues"
+  },
+  
+  "dependencies": {
+    "gh-pages": "^2.1.1"
+  }
+}
